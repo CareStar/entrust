@@ -169,7 +169,7 @@ class Entrust
                 if(! $result)
                     Facade::getFacadeApplication()->abort(403);
 
-                if ($result instanceof Closure)
+                if (is_callable($result))
                     return $result();
 
                 return $result;
@@ -233,7 +233,7 @@ class Entrust
                 if(! $result)
                     Facade::getFacadeApplication()->abort(403);
 
-                if ($result instanceof Closure)
+                if (is_callable($result))
                     return $result();
 
                 return $result;

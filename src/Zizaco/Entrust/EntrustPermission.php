@@ -18,8 +18,8 @@ class EntrustPermission extends Ardent
      * @var array
      */
     public static $rules = array(
-      'name' => 'required|between:4,128',
-      'display_name' => 'required|between:4,128'
+      'name' => 'required|between:1,255',
+      'display_name' => 'required|between:1,255'
     );
 
     /**
